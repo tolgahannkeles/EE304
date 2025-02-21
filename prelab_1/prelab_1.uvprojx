@@ -49,7 +49,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>prelab-1</OutputName>
+          <OutputName>prelab_1</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -384,11 +384,6 @@
         <Group>
           <GroupName>Source Group 1</GroupName>
           <Files>
-            <File>
-              <FileName>task1.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\task1.s</FilePath>
-            </File>
             <File>
               <FileName>task2.s</FileName>
               <FileType>2</FileType>
