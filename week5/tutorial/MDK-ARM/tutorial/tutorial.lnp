@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"tutorial\startup_stm32f103x6.o"
+"tutorial\main.o"
+"tutorial\stm32f1xx_it.o"
+"tutorial\stm32f1xx_hal_msp.o"
+"tutorial\stm32f1xx_hal_gpio_ex.o"
+"tutorial\stm32f1xx_hal.o"
+"tutorial\stm32f1xx_hal_rcc.o"
+"tutorial\stm32f1xx_hal_rcc_ex.o"
+"tutorial\stm32f1xx_hal_gpio.o"
+"tutorial\stm32f1xx_hal_dma.o"
+"tutorial\stm32f1xx_hal_cortex.o"
+"tutorial\stm32f1xx_hal_pwr.o"
+"tutorial\stm32f1xx_hal_flash.o"
+"tutorial\stm32f1xx_hal_flash_ex.o"
+"tutorial\stm32f1xx_hal_exti.o"
+"tutorial\system_stm32f1xx.o"
+--strict --scatter "tutorial\tutorial.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tutorial.map" -o tutorial\tutorial.axf
