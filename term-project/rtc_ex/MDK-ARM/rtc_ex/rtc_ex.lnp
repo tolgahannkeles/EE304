@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"rtc_ex\startup_stm32f103x6.o"
+"rtc_ex\main.o"
+"rtc_ex\stm32f1xx_it.o"
+"rtc_ex\stm32f1xx_hal_msp.o"
+"rtc_ex\lcd.o"
+"rtc_ex\dht22.o"
+"rtc_ex\stm32f1xx_hal_gpio_ex.o"
+"rtc_ex\stm32f1xx_hal_rtc.o"
+"rtc_ex\stm32f1xx_hal_rtc_ex.o"
+"rtc_ex\stm32f1xx_hal.o"
+"rtc_ex\stm32f1xx_hal_rcc.o"
+"rtc_ex\stm32f1xx_hal_rcc_ex.o"
+"rtc_ex\stm32f1xx_hal_gpio.o"
+"rtc_ex\stm32f1xx_hal_dma.o"
+"rtc_ex\stm32f1xx_hal_cortex.o"
+"rtc_ex\stm32f1xx_hal_pwr.o"
+"rtc_ex\stm32f1xx_hal_flash.o"
+"rtc_ex\stm32f1xx_hal_flash_ex.o"
+"rtc_ex\stm32f1xx_hal_exti.o"
+"rtc_ex\system_stm32f1xx.o"
+--strict --scatter "rtc_ex\rtc_ex.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "rtc_ex.map" -o rtc_ex\rtc_ex.axf

@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"lab_tutorial_8\startup_stm32f103x6.o"
+"lab_tutorial_8\main.o"
+"lab_tutorial_8\stm32f1xx_it.o"
+"lab_tutorial_8\stm32f1xx_hal_msp.o"
+"lab_tutorial_8\stm32f1xx_hal_gpio_ex.o"
+"lab_tutorial_8\stm32f1xx_hal_uart.o"
+"lab_tutorial_8\stm32f1xx_hal.o"
+"lab_tutorial_8\stm32f1xx_hal_rcc.o"
+"lab_tutorial_8\stm32f1xx_hal_rcc_ex.o"
+"lab_tutorial_8\stm32f1xx_hal_gpio.o"
+"lab_tutorial_8\stm32f1xx_hal_dma.o"
+"lab_tutorial_8\stm32f1xx_hal_cortex.o"
+"lab_tutorial_8\stm32f1xx_hal_pwr.o"
+"lab_tutorial_8\stm32f1xx_hal_flash.o"
+"lab_tutorial_8\stm32f1xx_hal_flash_ex.o"
+"lab_tutorial_8\stm32f1xx_hal_exti.o"
+"lab_tutorial_8\system_stm32f1xx.o"
+--strict --scatter "lab_tutorial_8\lab_tutorial_8.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "lab_tutorial_8.map" -o lab_tutorial_8\lab_tutorial_8.axf

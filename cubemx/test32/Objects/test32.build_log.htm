@@ -1,0 +1,170 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tolgahan Keles, Abdullah Gul University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.42.0.0
+Toolchain Path:  C:\Users\Tolgahan\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.23
+Assembler:       Armasm.exe V6.23
+Linker/Locator:  ArmLink.exe V6.23
+Library Manager: ArmAr.exe V6.23
+Hex Converter:   FromElf.exe V6.23
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.14.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+D:\projects\EE304\cubemx\test32\test32.uvprojx
+Project File Date:  05/31/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.23', folder: 'C:\Users\Tolgahan\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target_1'
+compiling RTX_Config.c...
+compiling system_stm32f10x.c...
+compiling os_systick.c...
+compiling GPIO_STM32F10x.c...
+C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(301): warning: unused parameter 'event' [-Wunused-parameter]
+  301 | __WEAK void DMA1_Channel1_Event (uint32_t event) {;}
+      |                                           ^
+C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(302): warning: unused parameter 'event' [-Wunused-parameter]
+  302 | __WEAK void DMA1_Channel2_Event (uint32_t event) {;}
+      |                                           ^
+C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(303): warning: unused parameter 'event' [-Wunused-parameter]
+  303 | __WEAK void DMA1_Channel3_Event (uint32_t event) {;}
+      |                                           ^
+C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(304): warning: unused parameter 'event' [-Wunused-parameter]
+  304 | __WEAK void DMA1_Channel4_Event (uint32_t event) {;}
+      |                                           ^
+C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(305): warning: unused parameter 'event' [-Wunused-parameter]
+  305 | __WEAK void DMA1_Channel5_Event (uint32_t event) {;}
+      |                                           ^
+C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(306): warning: unused parameter 'event' [-Wunused-parameter]
+  306 | __WEAK void DMA1_Channel6_Event (uint32_t event) {;}
+      |                                           ^
+C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/DMA_STM32F10x.c(307): warning: unused parameter 'event' [-Wunused-parameter]
+  307 | __WEAK void DMA1_Channel7_Event (uint32_t event) {;}
+      |                                           ^
+7 warnings generated.
+compiling DMA_STM32F10x.c...
+assembling startup_stm32f10x_ld.s...
+compiling rtx_lib.c...
+linking...
+.\Objects\test32.axf: Error: L6242E: Cannot link object rtx_kernel.o as its attributes are incompatible with the image attributes.
+   ... wchart-16 clashes with wchart-32.
+   ... packed-enum clashes with enum_is_int.
+.\Objects\test32.axf: Error: L6242E: Cannot link object rtx_mutex.o as its attributes are incompatible with the image attributes.
+   ... wchart-16 clashes with wchart-32.
+   ... packed-enum clashes with enum_is_int.
+.\Objects\test32.axf: Error: L6242E: Cannot link object rtx_thread.o as its attributes are incompatible with the image attributes.
+   ... wchart-16 clashes with wchart-32.
+   ... packed-enum clashes with enum_is_int.
+.\Objects\test32.axf: Error: L6242E: Cannot link object rtx_timer.o as its attributes are incompatible with the image attributes.
+   ... wchart-16 clashes with wchart-32.
+   ... packed-enum clashes with enum_is_int.
+.\Objects\test32.axf: Error: L6242E: Cannot link object rtx_memory.o as its attributes are incompatible with the image attributes.
+   ... wchart-16 clashes with wchart-32.
+   ... packed-enum clashes with enum_is_int.
+.\Objects\test32.axf: Error: L6242E: Cannot link object rtx_mempool.o as its attributes are incompatible with the image attributes.
+   ... wchart-16 clashes with wchart-32.
+   ... packed-enum clashes with enum_is_int.
+.\Objects\test32.axf: Error: L6242E: Cannot link object rtx_msgqueue.o as its attributes are incompatible with the image attributes.
+   ... wchart-16 clashes with wchart-32.
+   ... packed-enum clashes with enum_is_int.
+.\Objects\test32.axf: Error: L6242E: Cannot link object rtx_system.o as its attributes are incompatible with the image attributes.
+   ... wchart-16 clashes with wchart-32.
+   ... packed-enum clashes with enum_is_int.
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 18 information, 0 warning and 8 error messages.
+".\Objects\test32.axf" - 8 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+   * Component: SysTick Version: 1.0.5
+   * Component: OS Tick Version: 1.0.1
+   * Component: RTOS2 Version: 2.3.0
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-RTX.5.9.0.pack
+                ARM::CMSIS-RTX@5.9.0
+                RTX RTOS implementation of CMSIS-RTOS2 API
+   * Component: Keil RTX5 Variant: Library Version: 5.9.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: DMA Version: 1.3
+   * Component: GPIO Version: 1.3
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/CMSIS
+  ./RTE/Device/STM32F103C6
+  ./RTE/_Target_1
+  C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Include
+  C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/RTOS2/Include
+  C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+  C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: ARM::CMSIS:OS Tick:SysTick@1.0.5
+      Source file:   CMSIS/RTOS2/Source/os_systick.c
+
+   * Component: ARM::CMSIS:RTOS2:Keil RTX5&Library@5.9.0
+      Source file:   Template/Timer.c
+      Source file:   Source/rtx_lib.c
+      Include file:  Include/rtx_os.h
+      Include file:  Config/RTX_Config.h
+      Source file:   Config/RTX_Config.c
+      Source file:   Template/MemPool.c
+      Source file:   Template/Mutex.c
+      Source file:   Template/Semaphore.c
+      Source file:   Template/MsgQueue.c
+      Source file:   Template/main.c
+      Source file:   Template/Events.c
+      Source file:   Template/Thread.c
+      Source file:   Template/svc_user.c
+      Library file:  Library/ARM/RTX_V7M.lib
+
+   * Component: CMSIS:OS Tick(API)@1.0.1
+      Include file:  CMSIS/RTOS2/Include/os_tick.h
+
+   * Component: CMSIS:RTOS2(API)@2.3.0
+      Include file:  CMSIS/RTOS2/Include/cmsis_os2.h
+
+   * Component: Keil::Device:DMA@1.3
+      Source file:   RTE_Driver/DMA_STM32F10x.c
+      Include file:  RTE_Driver/DMA_STM32F10x.h
+
+   * Component: Keil::Device:GPIO@1.3
+      Source file:   RTE_Driver/GPIO_STM32F10x.c
+      Include file:  RTE_Driver/GPIO_STM32F10x.h
+
+   * Component: Keil::Device:Startup@1.0.0
+      Source file:   Device/Source/system_stm32f10x.c
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Source file:   Device/Source/ARM/startup_stm32f10x_ld.s
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

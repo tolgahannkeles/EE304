@@ -1,0 +1,2 @@
+lcd.h -> inc klasörü içine
+lcd.c -> src içine

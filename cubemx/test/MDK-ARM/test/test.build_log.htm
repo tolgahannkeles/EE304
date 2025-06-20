@@ -1,0 +1,752 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tolgahan Keles, Abdullah Gul University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.42.0.0
+Toolchain Path:  C:\Users\Tolgahan\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.23
+Assembler:       Armasm.exe V6.23
+Linker/Locator:  ArmLink.exe V6.23
+Library Manager: ArmAr.exe V6.23
+Hex Converter:   FromElf.exe V6.23
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+D:\projects\EE304\cubemx\test\MDK-ARM\test.uvprojx
+Project File Date:  05/31/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.23', folder: 'C:\Users\Tolgahan\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'test'
+assembling startup_stm32f103x6.s...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_timebase_tim.c...
+../Core/Src/freertos.c(21): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Core/Src/freertos.c(21): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling freertos.c...
+compiling stm32f1xx_it.c...
+../Core/Src/main.c(21): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS\cmsis_os.h(56): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Core/Src/main.c(21): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS\cmsis_os.h(56): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling main.c...
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling system_stm32f1xx.c...
+../Middlewares/Third_Party/FreeRTOS/Source/croutine.c(28): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Middlewares/Third_Party/FreeRTOS/Source/croutine.c(28): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling croutine.c...
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(37): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(37): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling event_groups.c...
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(38): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(38): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling stream_buffer.c...
+../Middlewares/Third_Party/FreeRTOS/Source/list.c(30): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Middlewares/Third_Party/FreeRTOS/Source/list.c(30): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling list.c...
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(36): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(36): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling queue.c...
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(38): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(38): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling tasks.c...
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(36): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(36): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling timers.c...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(57): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS\cmsis_os.h(56): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(57): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS\cmsis_os.h(56): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling cmsis_os.c...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c(43): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c(43): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling heap_4.c...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(33): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(167): error: unknown type name '__forceinline'
+  167 | static portFORCE_INLINE void vPortSetBASEPRI( uint32_t ulBASEPRI )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(170): error: expected 'volatile', 'inline', 'goto', or '('
+  170 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(178): error: unknown type name '__forceinline'
+  178 | static portFORCE_INLINE void vPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(183): error: expected 'volatile', 'inline', 'goto', or '('
+  183 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(193): error: unknown type name '__forceinline'
+  193 | static portFORCE_INLINE void vPortClearBASEPRIFromISR( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(196): error: expected 'volatile', 'inline', 'goto', or '('
+  196 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: unknown type name '__forceinline'
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected ';' after top level declarator
+  205 | static portFORCE_INLINE uint32_t ulPortRaiseBASEPRI( void )
+      |                                 ^
+      |                                 ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: unknown type name '__forceinline'
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(162): note: expanded from macro 'portFORCE_INLINE'
+  162 |         #define portFORCE_INLINE __forceinline
+      |                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(223): error: expected ';' after top level declarator
+  223 | static portFORCE_INLINE BaseType_t xPortIsInsideInterrupt( void )
+      |                                   ^
+      |                                   ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(33): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(71): error: 'reent.h' file not found
+   71 |         #include <reent.h>
+      |                  ^~~~~~~~~
+11 errors generated.
+compiling port.c...
+"test\test.axf" - 132 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_test
+  C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

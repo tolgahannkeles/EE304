@@ -1,0 +1,690 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tolgahan Keles, Abdullah Gul University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.42.0.0
+Toolchain Path:  C:\Users\Tolgahan\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.23
+Assembler:       Armasm.exe V6.23
+Linker/Locator:  ArmLink.exe V6.23
+Library Manager: ArmAr.exe V6.23
+Hex Converter:   FromElf.exe V6.23
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DARMSTM.DLL V1.69.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+D:\projects\EE304\term-project\rtos_example\MDK-ARM\rtos_example.uvprojx
+Project File Date:  05/07/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.23', folder: 'C:\Users\Tolgahan\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'rtos_example'
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_msp.c...
+assembling startup_stm32f103x6.s...
+../Src/main.c(21): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2\cmsis_os.h(126): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+5 errors generated.
+compiling main.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_timebase_tim.c...
+../Src/freertos.c(21): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+5 errors generated.
+compiling freertos.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_exti.c...
+../Middlewares/Third_Party/FreeRTOS/Source/croutine.c(28): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+5 errors generated.
+compiling croutine.c...
+../Middlewares/Third_Party/FreeRTOS/Source/list.c(30): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+5 errors generated.
+compiling list.c...
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(37): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(255): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  255 |                         portYIELD_WITHIN_API();
+      |                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(255): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(403): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  403 |                         portYIELD_WITHIN_API();
+      |                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(403): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+9 errors generated.
+compiling event_groups.c...
+compiling system_stm32f1xx.c...
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(38): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+5 errors generated.
+compiling stream_buffer.c...
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(36): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(281): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  281 |                                         queueYIELD_IF_USING_PREEMPTION();
+      |                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(89): note: expanded from macro 'queueYIELD_IF_USING_PREEMPTION'
+   89 |         #define queueYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(281): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(89): note: expanded from macro 'queueYIELD_IF_USING_PREEMPTION'
+   89 |         #define queueYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(845): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  845 |                                                         queueYIELD_IF_USING_PREEMPTION();
+      |                                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(89): note: expanded from macro 'queueYIELD_IF_USING_PREEMPTION'
+   89 |         #define queueYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(845): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(89): note: expanded from macro 'queueYIELD_IF_USING_PREEMPTION'
+   89 |         #define queueYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(858): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  858 |                                                 queueYIELD_IF_USING_PREEMPTION();
+      |                                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(89): note: expanded from macro 'queueYIELD_IF_USING_PREEMPTION'
+   89 |         #define queueYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(858): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(89): note: expanded from macro 'queueYIELD_IF_USING_PREEMPTION'
+   89 |         #define queueYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(927): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  927 |                                         portYIELD_WITHIN_API();
+      |                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(927): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1323): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1323 |                                                 queueYIELD_IF_USING_PREEMPTION();
+      |                                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(89): note: expanded from macro 'queueYIELD_IF_USING_PREEMPTION'
+   89 |         #define queueYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1323): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(89): note: expanded from macro 'queueYIELD_IF_USING_PREEMPTION'
+   89 |         #define queueYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1382): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1382 |                                         portYIELD_WITHIN_API();
+      |                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1382): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1485): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1485 |                                                 queueYIELD_IF_USING_PREEMPTION();
+      |                                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(89): note: expanded from macro 'queueYIELD_IF_USING_PREEMPTION'
+   89 |         #define queueYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1485): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(89): note: expanded from macro 'queueYIELD_IF_USING_PREEMPTION'
+   89 |         #define queueYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                  ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling queue.c...
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(38): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1146): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1146 |                         taskYIELD_IF_USING_PREEMPTION();
+      |                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(64): note: expanded from macro 'taskYIELD_IF_USING_PREEMPTION'
+   64 |         #define taskYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1146): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(64): note: expanded from macro 'taskYIELD_IF_USING_PREEMPTION'
+   64 |         #define taskYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1243): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1243 |                                 portYIELD_WITHIN_API();
+      |                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1243): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1328): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1328 |                         portYIELD_WITHIN_API();
+      |                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1328): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1373): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1373 |                         portYIELD_WITHIN_API();
+      |                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1373): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1684): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1684 |                                         taskYIELD_IF_USING_PREEMPTION();
+      |                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(64): note: expanded from macro 'taskYIELD_IF_USING_PREEMPTION'
+   64 |         #define taskYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1684): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(64): note: expanded from macro 'taskYIELD_IF_USING_PREEMPTION'
+   64 |         #define taskYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1773): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1773 |                                 portYIELD_WITHIN_API();
+      |                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1773): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1879): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1879 |                                                 taskYIELD_IF_USING_PREEMPTION();
+      |                                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(64): note: expanded from macro 'taskYIELD_IF_USING_PREEMPTION'
+   64 |         #define taskYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1879): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(64): note: expanded from macro 'taskYIELD_IF_USING_PREEMPTION'
+   64 |         #define taskYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()
+      |                                                 ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling tasks.c...
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(36): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(628): error: call to undeclared function '__dsb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  628 |                                         portYIELD_WITHIN_API();
+      |                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(90): note: expanded from macro 'portYIELD'
+   90 |         __dsb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(628): error: call to undeclared function '__isb'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(746): note: expanded from macro 'portYIELD_WITHIN_API'
+  746 |         #define portYIELD_WITHIN_API portYIELD
+      |                                      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(91): note: expanded from macro 'portYIELD'
+   91 |         __isb( portSY_FULL_READ_WRITE );                                                                                        \
+      |         ^
+7 errors generated.
+compiling timers.c...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c(28): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+5 errors generated.
+compiling cmsis_os2.c...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c(43): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+5 errors generated.
+compiling heap_4.c...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(33): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(62): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\portable.h(52): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(179): error: expected 'volatile', 'inline', 'goto', or '('
+  179 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(192): error: expected 'volatile', 'inline', 'goto', or '('
+  192 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(205): error: expected 'volatile', 'inline', 'goto', or '('
+  205 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(219): error: expected 'volatile', 'inline', 'goto', or '('
+  219 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(239): error: expected 'volatile', 'inline', 'goto', or '('
+  239 |         {
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(208): error: expected '(' after 'asm'
+  208 | __asm void vPortSVCHandler( void )
+      |       ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(208): error: expected ';' after top-level asm block
+  208 | __asm void vPortSVCHandler( void )
+      |      ^
+      |      ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(210): error: use of undeclared identifier 'PRESERVE8'
+  210 |         PRESERVE8
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(225): error: expected '(' after 'asm'
+  225 | __asm void prvStartFirstTask( void )
+      |       ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(225): error: expected ';' after top-level asm block
+  225 | __asm void prvStartFirstTask( void )
+      |      ^
+      |      ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(227): error: use of undeclared identifier 'PRESERVE8'
+  227 |         PRESERVE8
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(374): error: expected '(' after 'asm'
+  374 | __asm void xPortPendSVHandler( void )
+      |       ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(374): error: expected ';' after top-level asm block
+  374 | __asm void xPortPendSVHandler( void )
+      |      ^
+      |      ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(376): error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+  376 |         extern uxCriticalNesting;
+      |         ~~~~~~ ^
+      |         int
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(376): error: redeclaration of 'uxCriticalNesting' with a different type: 'int' vs 'UBaseType_t' (aka 'unsigned long')
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(134): note: previous definition is here
+  134 | static UBaseType_t uxCriticalNesting = 0xaaaaaaaa;
+      |                    ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(377): error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+  377 |         extern pxCurrentTCB;
+      |         ~~~~~~ ^
+      |         int
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(378): error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+  378 |         extern vTaskSwitchContext;
+      |         ~~~~~~ ^
+      |         int
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(378): error: redefinition of 'vTaskSwitchContext' as different kind of symbol
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(2427): note: previous definition is here
+ 2427 | portDONT_DISCARD void vTaskSwitchContext( void ) PRIVILEGED_FUNCTION;
+      |                       ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(380): error: use of undeclared identifier 'PRESERVE8'
+  380 |         PRESERVE8
+      |         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling port.c...
+"rtos_example\rtos_example.axf" - 108 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_rtos_example
+  C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

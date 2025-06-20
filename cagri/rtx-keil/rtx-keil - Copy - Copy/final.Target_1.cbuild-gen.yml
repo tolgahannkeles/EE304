@@ -1,0 +1,261 @@
+build-gen:
+  board: 
+  compiler: AC6
+  device: STM32F401VETx
+  generated-by: uVision version 5.42.0.0
+  processor:
+    core: Cortex-M4
+    dsp: off
+    endian: little
+    fpu: sp
+  add-path:
+    - D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Inc
+    - D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
+    - D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+    - D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/CMSIS/Include
+    - D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Core/Inc
+  components:
+    - component: ARM::CMSIS:CORE@6.1.0
+      from-pack: ARM::CMSIS@6.1.0
+    - component: ARM::CMSIS:OS Tick:SysTick@1.0.5
+      from-pack: ARM::CMSIS@6.1.0
+      files:
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/RTOS2/Source/os_systick.c
+          category: sourceC
+    - component: ARM::CMSIS:RTOS2:Keil RTX5&Source@5.9.0
+      from-pack: ARM::CMSIS-RTX@5.9.0
+      files:
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/GCC/irq_armv7m.S
+          category: sourceAsm
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_delay.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_evflags.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_evr.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_kernel.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_lib.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_memory.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_mempool.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_msgqueue.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_mutex.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_semaphore.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_system.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_thread.c
+          category: sourceC
+        - file: C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_timer.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/RTE/CMSIS/RTX_Config.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/RTE/CMSIS/RTX_Config.h
+          category: header
+    - component: Keil::Device:CubeMX@1.0.0
+      from-pack: Keil::STM32F4xx_DFP@3.0.0
+  apis:
+    - api: CMSIS:OS Tick(API)@1.0.1
+      from-pack: ARM::CMSIS@6.1.0
+    - api: CMSIS:RTOS2(API)@2.3.0
+      from-pack: ARM::CMSIS@6.1.0
+  groups:
+    - group: Source Group 1
+      files:
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/main.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Core/Src/stm32f4xx_hal_msp.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Core/Src/stm32f4xx_it.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/system_clock_config.c
+          category: sourceC
+    - group: Drivers/STM32F4xx_HAL_Driver
+      files:
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c
+          category: sourceC
+        - file: D:/projects/EE304/cagri/rtx-keil/rtx-keil - Copy - Copy/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c
+          category: sourceC
+    - group: Drivers/CMSIS
+      files: 

@@ -1,0 +1,212 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tolgahan Keles, Abdullah Gul University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.42.0.0
+Toolchain Path:  C:\Users\Tolgahan\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.23
+Assembler:       Armasm.exe V6.23
+Linker/Locator:  ArmLink.exe V6.23
+Library Manager: ArmAr.exe V6.23
+Hex Converter:   FromElf.exe V6.23
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+D:\projects\EE304\term-project\biktim2\MDK-ARM\biktim2.uvprojx
+Project File Date:  05/07/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.23', folder: 'C:\Users\Tolgahan\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'biktim2'
+compiling stm32f1xx_hal_timebase_tim.c...
+assembling startup_stm32f103x6.s...
+compiling stm32f1xx_it.c...
+compiling freertos.c...
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling main.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling system_stm32f1xx.c...
+compiling croutine.c...
+compiling list.c...
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(627): warning: implicit conversion from 'unsigned long' to 'TickType_t' (aka 'unsigned short') changes value from 33554432 to 0 [-Wconstant-conversion]
+  627 |                         vTaskRemoveFromUnorderedEventList( pxTasksWaitingForBits->xListEnd.pxNext, eventUNBLOCKED_DUE_TO_BIT_SET );
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(58): note: expanded from macro 'eventUNBLOCKED_DUE_TO_BIT_SET'
+   58 |         #define eventUNBLOCKED_DUE_TO_BIT_SET   0x02000000UL
+      |                                                 ^~~~~~~~~~~~
+1 warning generated.
+compiling event_groups.c...
+compiling timers.c...
+compiling stream_buffer.c...
+compiling queue.c...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(513): error: call to undeclared function 'traceISR_EXIT_TO_SCHEDULER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  513 |     portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
+      |     ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(111): note: expanded from macro 'portYIELD_FROM_ISR'
+  111 | #define portYIELD_FROM_ISR( x )    portEND_SWITCHING_ISR( x )
+      |                                    ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(103): note: expanded from macro 'portEND_SWITCHING_ISR'
+  103 |             traceISR_EXIT_TO_SCHEDULER();        \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(513): error: call to undeclared function 'traceISR_EXIT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(111): note: expanded from macro 'portYIELD_FROM_ISR'
+  111 | #define portYIELD_FROM_ISR( x )    portEND_SWITCHING_ISR( x )
+      |                                    ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(108): note: expanded from macro 'portEND_SWITCHING_ISR'
+  108 |             traceISR_EXIT();                     \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(651): error: call to undeclared function 'traceISR_EXIT_TO_SCHEDULER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  651 |         portEND_SWITCHING_ISR(taskWoken);
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(103): note: expanded from macro 'portEND_SWITCHING_ISR'
+  103 |             traceISR_EXIT_TO_SCHEDULER();        \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(651): error: call to undeclared function 'traceISR_EXIT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(108): note: expanded from macro 'portEND_SWITCHING_ISR'
+  108 |             traceISR_EXIT();                     \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(675): error: call to undeclared function 'traceISR_EXIT_TO_SCHEDULER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  675 |     portEND_SWITCHING_ISR(taskWoken);
+      |     ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(103): note: expanded from macro 'portEND_SWITCHING_ISR'
+  103 |             traceISR_EXIT_TO_SCHEDULER();        \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(675): error: call to undeclared function 'traceISR_EXIT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(108): note: expanded from macro 'portEND_SWITCHING_ISR'
+  108 |             traceISR_EXIT();                     \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(804): error: call to undeclared function 'traceISR_EXIT_TO_SCHEDULER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  804 |         portEND_SWITCHING_ISR(taskWoken);
+      |         ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(103): note: expanded from macro 'portEND_SWITCHING_ISR'
+  103 |             traceISR_EXIT_TO_SCHEDULER();        \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(804): error: call to undeclared function 'traceISR_EXIT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(108): note: expanded from macro 'portEND_SWITCHING_ISR'
+  108 |             traceISR_EXIT();                     \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(829): error: call to undeclared function 'traceISR_EXIT_TO_SCHEDULER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  829 |     portEND_SWITCHING_ISR(taskWoken);
+      |     ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(103): note: expanded from macro 'portEND_SWITCHING_ISR'
+  103 |             traceISR_EXIT_TO_SCHEDULER();        \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(829): error: call to undeclared function 'traceISR_EXIT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(108): note: expanded from macro 'portEND_SWITCHING_ISR'
+  108 |             traceISR_EXIT();                     \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(1081): error: call to undeclared function 'traceISR_EXIT_TO_SCHEDULER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1081 |     portEND_SWITCHING_ISR(taskWoken);
+      |     ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(103): note: expanded from macro 'portEND_SWITCHING_ISR'
+  103 |             traceISR_EXIT_TO_SCHEDULER();        \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(1081): error: call to undeclared function 'traceISR_EXIT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(108): note: expanded from macro 'portEND_SWITCHING_ISR'
+  108 |             traceISR_EXIT();                     \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(1134): error: call to undeclared function 'traceISR_EXIT_TO_SCHEDULER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1134 |     portEND_SWITCHING_ISR(taskWoken);
+      |     ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(103): note: expanded from macro 'portEND_SWITCHING_ISR'
+  103 |             traceISR_EXIT_TO_SCHEDULER();        \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(1134): error: call to undeclared function 'traceISR_EXIT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(108): note: expanded from macro 'portEND_SWITCHING_ISR'
+  108 |             traceISR_EXIT();                     \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(1272): error: call to undeclared function 'traceISR_EXIT_TO_SCHEDULER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1272 |     portEND_SWITCHING_ISR(taskWoken);
+      |     ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(103): note: expanded from macro 'portEND_SWITCHING_ISR'
+  103 |             traceISR_EXIT_TO_SCHEDULER();        \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(1272): error: call to undeclared function 'traceISR_EXIT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(108): note: expanded from macro 'portEND_SWITCHING_ISR'
+  108 |             traceISR_EXIT();                     \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(1324): error: call to undeclared function 'traceISR_EXIT_TO_SCHEDULER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1324 |     portEND_SWITCHING_ISR(taskWoken);
+      |     ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(103): note: expanded from macro 'portEND_SWITCHING_ISR'
+  103 |             traceISR_EXIT_TO_SCHEDULER();        \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(1324): error: call to undeclared function 'traceISR_EXIT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(108): note: expanded from macro 'portEND_SWITCHING_ISR'
+  108 |             traceISR_EXIT();                     \
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c(1455): error: call to undeclared function 'traceISR_EXIT_TO_SCHEDULER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1455 |       portYIELD_FROM_ISR(pdTRUE);
+      |       ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(111): note: expanded from macro 'portYIELD_FROM_ISR'
+  111 | #define portYIELD_FROM_ISR( x )    portEND_SWITCHING_ISR( x )
+      |                                    ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3\portmacro.h(103): note: expanded from macro 'portEND_SWITCHING_ISR'
+  103 |             traceISR_EXIT_TO_SCHEDULER();        \
+      |             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling cmsis_os.c...
+compiling tasks.c...
+compiling heap_4.c...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(498): error: call to undeclared function 'traceISR_ENTER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  498 |     traceISR_ENTER();
+      |     ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(503): error: call to undeclared function 'traceISR_EXIT_TO_SCHEDULER'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  503 |             traceISR_EXIT_TO_SCHEDULER();
+      |             ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(511): error: call to undeclared function 'traceISR_EXIT'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  511 |             traceISR_EXIT();
+      |             ^
+3 errors generated.
+compiling port.c...
+"biktim2\biktim2.axf" - 22 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_biktim2
+  C:/Users/Tolgahan/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Tolgahan/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

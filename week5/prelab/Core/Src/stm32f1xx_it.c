@@ -212,20 +212,6 @@ void EXTI1_IRQHandler(void)
   /* USER CODE END EXTI1_IRQn 1 */
 }
 
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-  if(GPIO_Pin == buttonInt0_Pin){
-		//Decrement counter
-		counter--;
-		update_leds(counter);
-	}
-	if(GPIO_Pin == buttonInt1_Pin){
-		//Increment counter
-		counter++;
-		update_leds(counter);
-	}
-}
-
 /**
   * @brief This function handles EXTI line2 interrupt.
   */
@@ -241,5 +227,16 @@ void EXTI2_IRQHandler(void)
 }
 
 /* USER CODE BEGIN 1 */
-
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+  if(GPIO_Pin == buttonInt0_Pin){
+		// Decrement the counter
+		counter--;
+		update_leds(counter);
+	}else if(GPIO_Pin == buttonInt1_Pin){
+		// Increment the counter
+		counter++;
+		update_leds(counter);
+	}
+}
 /* USER CODE END 1 */

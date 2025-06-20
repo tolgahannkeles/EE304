@@ -1,0 +1,10 @@
+20:39:04 **** Incremental Build of configuration Debug for project LED Blink RTOS ****
+make -j12 all 
+arm-none-eabi-size  LED\ Blink\ RTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13192	     24	  17936	  31152	   79b0	LED Blink RTOS.elf
+Finished building: default.size.stdout
+ 
+
+20:39:04 Build Finished. 0 errors, 0 warnings. (took 192ms)
+

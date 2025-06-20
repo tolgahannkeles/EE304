@@ -68,6 +68,8 @@ void update_leds(uint16_t value);
 #define led0_GPIO_Port GPIOA
 #define led1_Pin GPIO_PIN_10
 #define led1_GPIO_Port GPIOA
+#define led2_Pin GPIO_PIN_11
+#define led2_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 extern uint16_t counter;

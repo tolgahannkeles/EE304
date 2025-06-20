@@ -56,12 +56,15 @@ static void MX_GPIO_Init(void);
 /* USER CODE BEGIN 0 */
 void update_leds(uint16_t value){
 
-	GPIO_PinState led0_value, led1_value;
+	GPIO_PinState led0_value, led1_value, led2_value;
 	led0_value = (value & (uint16_t) 1) ? GPIO_PIN_SET : GPIO_PIN_RESET; 
 	led1_value = (value & (uint16_t) 2) ? GPIO_PIN_SET : GPIO_PIN_RESET;
+	led2_value = (value & (uint16_t) 4) ? GPIO_PIN_SET : GPIO_PIN_RESET;
 	
 	HAL_GPIO_WritePin(led0_GPIO_Port,led0_Pin,led0_value);
 	HAL_GPIO_WritePin(led1_GPIO_Port,led1_Pin,led1_value);
+	HAL_GPIO_WritePin(led2_GPIO_Port,led2_Pin,led2_value);
+	
 }
 /* USER CODE END 0 */
 
@@ -162,7 +165,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, led0_Pin|led1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, led0_Pin|led1_Pin|led2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : buttonInt0_Pin buttonInt1_Pin */
   GPIO_InitStruct.Pin = buttonInt0_Pin|buttonInt1_Pin;
@@ -170,8 +173,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : led0_Pin led1_Pin */
-  GPIO_InitStruct.Pin = led0_Pin|led1_Pin;
+  /*Configure GPIO pins : led0_Pin led1_Pin led2_Pin */
+  GPIO_InitStruct.Pin = led0_Pin|led1_Pin|led2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"lab11_prelab\startup_stm32f103x6.o"
+"lab11_prelab\main.o"
+"lab11_prelab\stm32f1xx_it.o"
+"lab11_prelab\stm32f1xx_hal_msp.o"
+"lab11_prelab\stm32f1xx_hal_gpio_ex.o"
+"lab11_prelab\stm32f1xx_hal_adc.o"
+"lab11_prelab\stm32f1xx_hal_adc_ex.o"
+"lab11_prelab\stm32f1xx_hal.o"
+"lab11_prelab\stm32f1xx_hal_rcc.o"
+"lab11_prelab\stm32f1xx_hal_rcc_ex.o"
+"lab11_prelab\stm32f1xx_hal_gpio.o"
+"lab11_prelab\stm32f1xx_hal_dma.o"
+"lab11_prelab\stm32f1xx_hal_cortex.o"
+"lab11_prelab\stm32f1xx_hal_pwr.o"
+"lab11_prelab\stm32f1xx_hal_flash.o"
+"lab11_prelab\stm32f1xx_hal_flash_ex.o"
+"lab11_prelab\stm32f1xx_hal_exti.o"
+"lab11_prelab\stm32f1xx_hal_tim.o"
+"lab11_prelab\stm32f1xx_hal_tim_ex.o"
+"lab11_prelab\system_stm32f1xx.o"
+--strict --scatter "Lab11_prelab\Lab11_prelab.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Lab11_prelab.map" -o Lab11_prelab\Lab11_prelab.axf
